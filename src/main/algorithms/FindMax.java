@@ -16,11 +16,11 @@ public class FindMax {
         if (input == null || input.length == 0) {
             return Integer.MIN_VALUE;
         }
-        List<Integer> values = new LinkedList<>();
+        List<Integer> maxValues = new LinkedList<>();
         for (int el : input) {
-            addElement(values, el, nMax);
+            addElement(maxValues, el, nMax);
         }
-        return values.get(values.size()-1);
+        return maxValues.get(maxValues.size()-1);
     }
 
     private static void addElement(List<Integer> descList, int source, int n) {
